@@ -11,6 +11,18 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>4fc2ae881578-releases</name>
+            <url>http://35.202.108.99:80/artifactory/scale-maven-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>4fc2ae881578-snapshots</name>
+            <url>http://35.202.108.99:80/artifactory/scale-maven-local</url>
+        </snapshotRepository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>joda-time</groupId>
